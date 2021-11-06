@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    width: 45%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.main .inputArea {
+    display: flex;
+    flex-direction:column ;
+    align-items: flex-start;
+}
+
+.main .bill {
+    display: flex;
+    flex-direction:column ;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.main .bill > label {
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 5px;
+}
+
+.main .bill > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 93%;
+}
+
+.main .bill > div >input {
+    background: none;
+
+    width: 100%;
+}
+
+.main .inputArea input {
+    -moz-appearance: textfield;
+    outline: none;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    text-align: end;
+    font-family: 'Space Mono', monospace;
+    
+}
+
+.main .inputArea .tipButtons {
+    display: flex;
+    flex-direction:column ;
+    align-items: flex-start;
+
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.main .inputArea .tipButtons p {
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 5px;
+}
+
+.main .inputArea .tipButtons > form button {
+    background: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.main .inputArea .tipButtons > form {
+    display: grid;
+    grid-template-columns: repeat(3, 120px );
+    grid-template-rows: repeat(2,50px);
+    grid-gap: 10px;
+
+    width: 100%;
+}
+.main .inputArea .tipButtons > form > input{
+    padding: 10px;
+}
+
+.main .inputArea .numOfPeople {
+    display: flex;
+    flex-direction:column ;
+    align-items: flex-start;
+    width: 93%;
+}
+
+.main .inputArea .numOfPeople label {
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 5px;
+
+}
+.main .inputArea .numOfPeople > div input {
+    background: none;
+    width: 100%;
+}
+
+.main .inputArea .numOfPeople > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.main .displayArea {
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    background: hsl(183, 100%, 15%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: auto;
+}
+
+.main .displayArea .tipAmmount, 
+.main .displayArea .totalPerson {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main .displayArea .tipAmmount > p, 
+.main .displayArea .totalPerson > p {
+    color: hsl(172, 69%, 45%);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main .displayArea .tipAmmount > div p:last-child, 
+.main .displayArea .totalPerson > div p:last-child{
+    color: hsl(184, 14%, 56%);
+    font-size: .8rem;
+}
+
+.main .displayArea .tipAmmount {
+    margin-bottom: 10px;
+}
+
+.main .displayArea .resetButton {
+    margin-top: auto;
+    align-self: center;
+    width: 100%;
+}
+
+.main .displayArea .resetButton button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: hsl(183, 79%, 24%);
+    color: #055D61;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
